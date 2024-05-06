@@ -1,10 +1,15 @@
+# ADICIONAR LINGUAGEM INGLÊS PARA A APLICAÇÃO
+# ADICIONAR NÍVEIS DE DIFICULDADE, 1-10, 1-20, 1-50
+# ADICIONAR "DICAS"
+# ADICIONAR ESTATISTICAS DO JOGADOR
+
 import random
 
 print("Você está em um jogo de adivinhação de números entre 1 - 20 (1 e 20 inclusos).\nBoa sorte!")
 
 cont = 0
 while True:
-    number = random.randint(1, 20)
+    number = random.choice([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20])
     try:
         user_choice = int(input("\nEscolha seu número: "))
     except ValueError:
