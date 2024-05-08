@@ -1,9 +1,3 @@
-# ADICIONAR NÍVEIS DE DIFICULDADE, 1-10, 1-25, 1-50
-# ADICIONAR "DICAS"
-# ADICIONAR ESTATISTICAS DO JOGADOR
-
-# FAZER COM QUE QUANDO O JOGADOR QUEIRA JOGAR DNV, VOLTAR AO LEVEL
-
 import random
 
 cont = 0
@@ -83,6 +77,12 @@ while True:
                             cont -= 1
                             continue
 
+                        if user_choice > number:
+                            print("Lower!")
+
+                        if user_choice < number:
+                            print("Higher!")
+
                         if user_choice == number:
                             print("\nCongratulations you got it!")
                             print(f"Total of tries = {cont}")
@@ -123,6 +123,12 @@ while True:
                             print("Choose a number between 1 - 50")
                             cont -= 1
                             continue
+
+                        if user_choice > number:
+                            print("Lower!")
+
+                        if user_choice < number:
+                            print("Higher!")
 
                         if user_choice == number:
                             print("\nCongratulations you got it!")
@@ -217,6 +223,12 @@ while True:
                             cont -= 1
                             continue
 
+                        if user_choice > number:
+                            print("Menor!")
+
+                        if user_choice < number:
+                            print("Maior!")
+
                         if user_choice == number:
                             print("\nParabêns você acertou!")
                             print(f"Total de tentativas = {cont}")
@@ -259,6 +271,12 @@ while True:
                             cont -= 1
                             continue
 
+                        if user_choice > number:
+                            print("Menor!")
+
+                        if user_choice < number:
+                            print("Maior!")
+
                         if user_choice == number:
                             print("\nParabêns você acertou!")
                             print(f"Total de tentativas = {cont}")
@@ -287,6 +305,5 @@ while True:
             print("\nEscolha uma lingugagem como foi dita.")
             print("Choose a language as said.")
             continue
-
 
     break
